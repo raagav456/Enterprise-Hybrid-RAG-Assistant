@@ -1,0 +1,19 @@
+
+flowchart TD
+    A["User Question"] --> B["Hybrid Retrieval"]
+
+    B --> C["Vector Search<br/>ChromaDB"]
+    B --> D["Keyword Search<br/>BM25"]
+
+    C --> E["Reciprocal Rank Fusion"]
+    D --> E
+
+    E --> F["Cross-Encoder Reranking"]
+    F --> G["Context Builder"]
+
+    G --> H["Prompt Template"]
+    H --> I["Qwen 2.5 3B<br/>Ollama"]
+
+    I --> J{"Sufficient Evidence?"}
+    J -->|Yes| K["Grounded Answer"]
+    J -->|No| L["Abstention"]

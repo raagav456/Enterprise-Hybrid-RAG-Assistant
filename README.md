@@ -1,419 +1,239 @@
-# Enterprise-Hybrid-RAG-Assistant
+# Enterprise Knowledge Assistant — Hybrid RAG System
 
-### Hybrid Retrieval-Augmented Generation (RAG) System
+An end-to-end Retrieval-Augmented Generation (RAG) project that answers enterprise knowledge questions using a synthetic company dataset.
 
-A local enterprise knowledge assistant built using **Hybrid Search, Reciprocal Rank Fusion, Cross-Encoder Reranking, and a locally hosted LLM**.
-
-The system retrieves relevant information from an enterprise knowledge base and generates context-grounded answers using Qwen 2.5 3B through Ollama.
-
----
+The system combines semantic search, keyword retrieval, Reciprocal Rank Fusion (RRF), cross-encoder reranking, and a locally hosted Large Language Model (LLM) to generate context-grounded answers.
 
 ## 1. Project Overview
 
-Enterprise organizations maintain large volumes of information about employees, departments, projects, expenses, vendors, policies, and IT tickets.
+This project simulates an enterprise knowledge assistant for a fictional company, TechNova Solutions.
 
-Searching through these records manually is time-consuming. General-purpose LLMs may also produce unsupported answers when they lack access to enterprise-specific information.
+Users can ask questions about:
+- Employee profiles and departments
+- Projects and budgets
+- Vendors and payment terms
+- Expenses
+- IT support tickets
+- Company policies
 
-This project addresses these challenges by implementing an end-to-end RAG pipeline that:
+The assistant retrieves relevant documents, constructs context, and generates answers using only the retrieved evidence. It can also abstain when sufficient evidence is unavailable.
 
-- Retrieves relevant information using vector and keyword search.
-- Combines retrieval results using Reciprocal Rank Fusion (RRF).
-- Improves ranking using a Cross-Encoder.
-- Builds relevant context for the LLM.
-- Generates answers using a locally hosted model.
-- Abstains when sufficient supporting information is unavailable.
+## 2. Architecture
 
-**Objective:** Build a local-first enterprise RAG system that provides relevant and context-grounded answers without paid LLM APIs or cloud-based vector databases.
+```text
+                 User Question
+                       |
+                       v
+                Hybrid Retrieval
+                 /           \
+                v             v
+          Vector Search    BM25 Search
+                \             /
+                 \           /
+                       v
+                Reciprocal Rank
+                   Fusion
+                       |
+                       v
+              Cross-Encoder
+                 Reranking
+                       |
+                       v
+                Context Builder
+                       |
+                       v
+                Prompt Template
+                       |
+                       v
+              Ollama - Qwen 2.5
+                       |
+                       v
+              Generated Answer
+                       |
+                       v
+              Answer / Abstention
+```
 
-## 2. Technology Stack
+## 3. Technology Stack
 
 | Component | Technology |
 |---|---|
-| Language | Python |
-| LLM | Qwen 2.5 3B |
-| LLM Runtime | Ollama |
-| Embedding Model | all-MiniLM-L6-v2 |
-| Vector Database | ChromaDB |
-| Keyword Search | BM25 |
-| Hybrid Ranking | Reciprocal Rank Fusion |
-| Reranker | Cross-Encoder MiniLM |
-| Evaluation | RAGAS |
-| Evaluation Embeddings | all-MiniLM-L6-v2 |
+| Programming language | Python |
+| Vector database | ChromaDB |
+| Embedding model | all-MiniLM-L6-v2 |
+| Keyword retrieval | BM25 |
+| Hybrid ranking | Reciprocal Rank Fusion |
+| Reranking | Cross-Encoder |
+| Local LLM | Qwen 2.5 3B |
+| LLM runtime | Ollama |
+| Evaluation | Custom Python scripts |
 
-All model inference and evaluation are configured for local execution.
+## 4. Dataset
 
-## 3. Dataset
+The project uses a synthetic enterprise dataset for TechNova Solutions.
 
-The project uses a synthetic enterprise knowledge base representing TechNova Solutions.
+- 10 departments
+- 1,000 employee records
+- 300 projects
+- 300 vendors
+- 3,000 expenses
+- 1,500 IT tickets
+- 10 policy documents
+- 5,000 project update documents
 
-| Document Category | Records |
-|---|---:|
-| Departments | 10 |
-| Employees | 1,000 |
-| Projects | 300 |
-| Vendors | 300 |
-| Expenses | 3,000 |
-| IT Tickets | 1,500 |
-| HR Policies | 10 |
-| Project Updates | 5,000 |
-| **Total** | **11,110** |
+**Total: 11,110 documents**
 
-The documents are stored in JSONL format and processed into 11,110 chunks.
+The evaluation dataset contains 1,525 examples, including answerable and unanswerable questions.
 
-### Evaluation Dataset
+## 5. Key Features
 
-A balanced sample of 85 questions was used for RAGAS evaluation:
+### Hybrid Retrieval
+Combines semantic vector search and BM25 keyword search to improve document retrieval.
 
-- 60 factual questions
-- 10 policy questions
-- 5 paraphrased questions
-- 10 unanswerable questions
-
-The sample contains 75 answerable and 10 unanswerable questions.
-
-## 4. System Architecture
-
-```mermaid
-flowchart TD
-    A[Enterprise Documents] --> B[Validation and Processing]
-    B --> C[Chunking]
-    C --> D[Embedding Generation]
-    D --> E[(ChromaDB)]
-    C --> F[BM25 Index]
-
-    G[User Query] --> H[Exact Lookup]
-    H --> I[Hybrid Retrieval]
-    E --> I
-    F --> I
-
-    I --> J[RRF Fusion]
-    J --> K[Cross-Encoder Reranking]
-    K --> L[Context Builder]
-    L --> M[Prompt Template]
-    M --> N[Qwen 2.5 3B via Ollama]
-    N --> O[Answer with Sources]
-```
-
-### Retrieval and Generation Workflow
-
-1. **Ingestion:** Load and validate enterprise documents.
-2. **Chunking:** Prepare documents for embedding and retrieval.
-3. **Embedding:** Convert document content into 384-dimensional vectors.
-4. **Storage:** Store vectors and metadata in ChromaDB.
-5. **Exact Lookup:** Handle supported exact employee-name, identifier, and project-title queries.
-6. **Hybrid Retrieval:** Retrieve candidates through vector search and BM25.
-7. **RRF Fusion:** Combine both ranked result lists.
-8. **Reranking:** Score query-document pairs using a Cross-Encoder.
-9. **Context Building:** Select the most relevant documents.
-10. **Generation:** Use Qwen to generate an answer from the prepared context.
-
-## 5. Retrieval Implementation
-
-### Hybrid Search
-
-The system combines two retrieval methods:
-
-**Vector Search**
-- Finds semantically similar documents.
-- Handles questions with different wording but similar meaning.
-
-**BM25 Keyword Search**
-- Finds documents using keyword matching.
-- Helps with names, identifiers, policy terms, and specific keywords.
-
-The project retrieves the top 20 candidates from each retrieval method and combines their rankings using RRF.
-
-### Reciprocal Rank Fusion (RRF)
-
-RRF combines ranked lists using rank positions rather than comparing raw retrieval scores.
-
-\[
-RRF(d)=\sum_{r\in R}\frac{1}{k+rank_r(d)}
-\]
-
-Where:
-
-- \(d\): Document
-- \(R\): Retrieval result lists
-- \(k\): RRF constant (60)
-- \(rank_r(d)\): Document rank in a result list
+### Reciprocal Rank Fusion
+Combines rankings from multiple retrieval methods into a unified ranking.
 
 ### Cross-Encoder Reranking
-
-The fused candidates are reranked using:
-
-`cross-encoder/ms-marco-MiniLM-L-6-v2`
-
-The Cross-Encoder evaluates the query and each candidate document together, producing a relevance score. The highest-ranked results are passed to the context builder.
+Uses a cross-encoder model to improve the relevance ordering of retrieved documents.
 
 ### Context Building
+Selects relevant documents and constructs a bounded context for the language model.
 
-The context builder selects the strongest retrieved documents and prepares the final context for the LLM.
+### Grounded Answer Generation
+Uses a local Qwen model through Ollama. The prompt instructs the model to answer using retrieved evidence only.
 
-Current configuration:
+### Abstention
+The system can abstain when retrieved evidence is insufficient.
 
-| Parameter | Value |
+### Evaluation
+Includes separate retrieval, generation, threshold, and faithfulness evaluation scripts.
+
+## 6. Retrieval Evaluation Results
+
+Evaluation on 1,515 answerable questions:
+
+| Retrieval Method | Recall@5 | Precision@5 |
+|---|---:|---:|
+| Vector Search | 47.85% | 9.57% |
+| BM25 | 84.49% | 16.90% |
+| Hybrid RRF | 94.59% | 18.92% |
+| Hybrid + Cross-Encoder | 97.62% | 19.52% |
+
+The cross-encoder improved Recall@5 by 3.03 percentage points over hybrid RRF.
+
+MRR improved from 0.7423 to 0.9459 (MRR@20).
+
+## 7. Generation Evaluation Results
+
+Evaluation on a balanced sample of 85 questions:
+
+| Metric | Result |
 |---|---:|
-| Maximum documents | 3 |
-| Maximum context characters | 12,000 |
-| Score margin | 3.0 |
+| Answerability accuracy | 100% |
+| Reference answer containment | 93.33% |
+| Token F1 | 35.44% |
+| Source precision | 92.89% |
+| Source recall | 98.67% |
+| Unanswerable abstention accuracy | 100% |
+| Citation ID validity | 100% |
 
-## 6. Answer Generation
+Citation ID validity was measured on 21 answers with explicit citations. It checks source-ID matching, not claim-level evidence support.
 
-The system uses **Qwen 2.5 3B through Ollama**.
+## 8. Faithfulness Evaluation
 
-The prompt instructs the model to:
+An exploratory LLM-as-judge evaluation was performed using Qwen 2.5 3B on 10 answerable questions.
 
-- Answer using the retrieved context.
-- Avoid unsupported information.
-- Include supporting source IDs where applicable.
-- Abstain when sufficient evidence is unavailable.
+- Initial judge result: 9/10 faithful.
+- One false negative was identified through manual source verification.
+- After manual verification, all 10 answers in this sample were supported by their source documents.
 
-This helps reduce unsupported answers and keeps responses grounded in the enterprise knowledge base.
+This small sample is not a statistically reliable overall faithfulness benchmark. The same local model was used for generation and judging, so evaluator bias is possible.
 
-## 7. Evaluation
-
-Evaluation was performed at two levels:
-
-1. Retrieval evaluation using custom metrics.
-2. Generation and context-quality evaluation using RAGAS.
-
-### 7.1 Retrieval Evaluation
-
-The retrieval pipeline was evaluated using Recall@5, Precision@5, and MRR@20.
-
-**Recall@5**
-
-Measures how many relevant documents were retrieved within the top five results.
-
-\[
-Recall@5 =
-\frac{\text{Relevant documents retrieved in top 5}}
-{\text{Total relevant documents}}
-\]
-
-**Precision@5**
-
-Measures the proportion of the top five retrieved documents that are relevant.
-
-\[
-Precision@5 =
-\frac{\text{Relevant documents in top 5}}{5}
-\]
-
-**Mean Reciprocal Rank (MRR@20)**
-
-Measures the ranking position of the first relevant document.
-
-\[
-MRR@20 =
-\frac{1}{N}\sum_{i=1}^{N}\frac{1}{rank_i}
-\]
-
-A higher MRR indicates that relevant documents tend to appear closer to the top.
-
-### Retrieval Results
-
-| Retrieval Method | Recall@5 | Precision@5 | MRR@20 |
-|---|---:|---:|---:|
-| Vector Search | 47.85% | 9.57% | 0.4434 |
-| BM25 | 84.49% | 16.90% | 0.8245 |
-| Hybrid Search (RRF) | 94.59% | 18.92% | 0.7423 |
-| Hybrid + Cross-Encoder | **97.62%** | **19.52%** | **0.9459** |
-
-**Observation:** Hybrid retrieval improved Recall@5 compared with vector search alone. Adding Cross-Encoder reranking further improved Recall@5 and MRR@20 on the evaluated dataset.
-
-### 7.2 RAGAS Evaluation
-
-Initially, custom Python scripts were used for generation and faithfulness evaluation. Later, RAGAS was introduced to provide a standardized evaluation approach.
-
-The final evaluation uses four RAGAS metrics:
-
-| Metric | What It Measures |
-|---|---|
-| Faithfulness | Whether generated claims are supported by retrieved context |
-| Answer Relevancy | Whether the answer addresses the user's question |
-| Context Precision | Whether relevant contexts are ranked above irrelevant contexts |
-| Context Recall | Whether retrieved context contains the information needed to answer the question |
-
-#### RAGAS Score Interpretation
-
-All four metrics generally range from **0 to 1**, with higher scores indicating better performance.
-
-The following are practical interpretation guidelines, not official RAGAS thresholds.
-
-| Score | Interpretation |
-|---|---|
-| 0.00–0.39 | Low |
-| 0.40–0.69 | Moderate |
-| 0.70–0.89 | Good |
-| 0.90–1.00 | Excellent |
-
-**How to interpret low scores:**
-
-- Low Faithfulness: Investigate unsupported claims, retrieved context, and prompt instructions.
-- Low Answer Relevancy: Investigate question understanding and answer generation.
-- Low Context Precision: Investigate hybrid retrieval and reranking.
-- Low Context Recall: Investigate ingestion, chunking, and retrieval coverage.
-
-RAGAS scores are automated evaluator estimates, not guarantees of correctness. Individual low-scoring examples should be manually inspected.
-
-#### Evaluation Configuration
-
-- Evaluator LLM: Qwen 2.5 3B through local Ollama.
-- Evaluation embeddings: all-MiniLM-L6-v2.
-- Evaluation sample: 85 questions.
-- Answerable questions: 75.
-- Unanswerable questions: 10.
-
-The evaluation results are stored in:
-
-`evaluation/results/ragas_evaluation_results.json`
-
-RAGAS evaluates generation and context quality; it does not replace the custom Recall@5, Precision@5, and MRR@20 retrieval calculations.
-
-## 8. Project Structure
+## 9. Project Structure
 
 ```text
 RAG Project/
 │
 ├── employee-handbook-rag/
 │   ├── data/
+│   │   ├── source/
 │   │   ├── documents/
 │   │   └── evaluation/
-│   ├── generation/
-│   │   ├── answer_generator.py
-│   │   ├── context_builder.py
-│   │   ├── prompt_template.py
-│   │   └── rag_pipeline.py
-│   ├── requirements.txt
-│   └── validate_dataset.py
+│   │
+│   └── generation/
+│       ├── context_builder.py
+│       ├── prompt_template.py
+│       ├── answer_generator.py
+│       └── rag_pipeline.py
 │
 ├── ingestion/
 │   └── ingest.py
 │
 ├── retrieval/
 │   ├── hybrid_search.py
-│   └── reranker.py
+│   ├── reranker.py
+│   └── test_retrieval.py
 │
 ├── evaluation/
-│   ├── balanced_evaluation_sample.jsonl
-│   ├── create_evaluation_sample.py
-│   ├── evaluate_retrieval_with_reranker.py
-│   ├── evaluate_with_ragas.py
-│   ├── ragas_config.py
-│   └── results/
+│   ├── evaluate_retrieval.py
+│   ├── evaluate_generation.py
+│   ├── evaluate_threshold.py
+│   ├── evaluate_unanswerable.py
+│   └── evaluate_faithfulness.py
 │
-├── tests/
-├── vector_db/
-├── architecture.mmd
-└── README.md
+└── vector_db/
 ```
 
-## 9. Running the Project
+## 10. Local Setup
 
 ### Prerequisites
 
 - Python
 - Ollama
 - Git
+- Sufficient memory to load the embedding and reranking models
 
-### Clone the repository
-
-```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_FOLDER>
-```
-
-### Create and activate a virtual environment
-
-```bash
-python -m venv .venv
-```
-
-Windows PowerShell:
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-### Install dependencies
-
-```bash
-pip install -r employee-handbook-rag/requirements.txt
-```
-
-### Download the local LLM
+### Install Ollama model
 
 ```bash
 ollama pull qwen2.5:3b
 ```
 
-Ensure Ollama is running before executing the application.
-
-### Validate the dataset
+### Install Python dependencies
 
 ```bash
-python employee-handbook-rag/validate_dataset.py
+pip install chromadb sentence-transformers rank-bm25 ollama tqdm
 ```
 
-### Build the vector database
+### Run Ollama
 
-```bash
-python ingestion/ingest.py
-```
+Ensure the Ollama service is running before executing the generation pipeline.
 
-### Run the RAG pipeline
+### Data and indexing
 
-The main pipeline is implemented in:
+The project includes ingestion and evaluation scripts. The vector database is built from the synthetic document dataset.
 
-`employee-handbook-rag/generation/rag_pipeline.py`
+Refer to the corresponding Python scripts for the existing ingestion and execution workflow.
 
-It exposes the `ask_question()` function to process a user query and return the generated answer, retrieved contexts, sources, and status.
+## 11. Limitations
 
-### Run retrieval evaluation
+- The dataset is synthetic and does not represent real enterprise records.
+- The benchmark contains many direct factual lookup questions.
+- Policy and paraphrased question categories are relatively small.
+- The threshold was selected and evaluated on the same small evaluation set, so its results are optimistic.
+- The faithfulness evaluation uses an LLM judge and requires further independent validation.
+- Retrieval and generation metrics should not be interpreted as production guarantees.
 
-```bash
-python evaluation/evaluate_retrieval_with_reranker.py
-```
+## 12. Future Improvements
 
-### Run RAGAS evaluation
+- Expand multi-hop and adversarial evaluation questions.
+- Use a separate model or human reviewers for faithfulness assessment.
+- Evaluate claim-level citation support.
+- Test retrieval and abstention thresholds on a separate validation set.
+- Add a user interface and conversation history.
 
-```bash
-python evaluation/evaluate_with_ragas.py --limit 2
-```
+## 13. Project Objective
 
-For the complete 85-question evaluation:
+The objective of this project is to demonstrate practical understanding of enterprise RAG architecture, hybrid information retrieval, reranking, grounded LLM generation, abstention, and systematic evaluation using locally hosted models.
 
-```bash
-python evaluation/evaluate_with_ragas.py
-```
-
-Evaluation dependencies and the local evaluation model configuration must be available in the active environment.
-
-## 10. Limitations
-
-- The knowledge base is synthetic and primarily consists of structured, relatively short records.
-- Evaluation was performed on a limited balanced sample of 85 questions for generation quality.
-- RAGAS evaluation depends on an automated LLM evaluator and can produce imperfect judgments.
-- Performance may differ on real-world enterprise documents, particularly long documents and complex multi-document questions.
-- The current results should not be interpreted as production-level performance guarantees.
-
-## 11. Key Takeaways
-
-This project demonstrates practical implementation of:
-
-- End-to-end RAG architecture.
-- Document ingestion and embedding generation.
-- Vector search and BM25 keyword retrieval.
-- Hybrid retrieval using RRF.
-- Cross-Encoder reranking.
-- Context selection and prompt engineering.
-- Local LLM inference using Ollama.
-- Grounded answer generation and abstention.
-- Retrieval evaluation using Recall@K, Precision@K, and MRR.
-- RAGAS evaluation using Faithfulness, Answer Relevancy, Context Precision, and Context Recall.
-
----
-
-**Built as a hands-on project to understand and implement the complete Retrieval-Augmented Generation workflow using local and open-source technologies.**
+**Built with Python, ChromaDB, Sentence Transformers, BM25, and Ollama.**
