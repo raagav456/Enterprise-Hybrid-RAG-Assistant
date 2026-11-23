@@ -1,0 +1,1589 @@
+[
+    {
+        "question": "What is the employee ID of Idika Walia?",
+        "reference_answer": "EMP-00192",
+        "answerable": true,
+        "generated_answer": "Idika Walia's employee ID is EMP-00192. \n\nSource: DOC-EMP-00192",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00192\nContent: Employee profile: Idika Walia (EMP-00192) works as Data Analyst in Finance (DEPT-002) at the Bengaluru office. The employee joined on 2024-06-15. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00192"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9854750992219304,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000037?",
+        "reference_answer": "P3",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000037 is P3.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000037\nContent: IT ticket IT-000037 was raised by Advik Salvi (EMP-00194) from Operations (DEPT-005). Category: Email Issue. Priority: P3. Status: In Progress. Created: 2024-01-27."
+        ],
+        "sources": [
+            "DOC-IT-000037"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.933775343080033,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Ethan Bera?",
+        "reference_answer": "EMP-00229",
+        "answerable": true,
+        "generated_answer": "The employee ID of Ethan Bera is EMP-00229.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00229\nContent: Employee profile: Ethan Bera (EMP-00229) works as Senior Software Engineer in Human Resources (DEPT-001) at the Delhi office. The employee joined on 2025-12-12. Employment type: Full-time. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00229"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9832846720515898,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000010?",
+        "reference_answer": "P1",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000010 is P1.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000010\nContent: IT ticket IT-000010 was raised by Vivaan Walla (EMP-00460) from Sales (DEPT-007). Category: Network Issue. Priority: P1. Status: Open. Created: 2024-11-20."
+        ],
+        "sources": [
+            "DOC-IT-000010"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.944394828643996,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Bahadurjit Patla?",
+        "reference_answer": "EMP-00319",
+        "answerable": true,
+        "generated_answer": "The employee ID of Bahadurjit Patla is EMP-00319. \n\nSource: DOC-EMP-00319",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00319\nContent: Employee profile: Bahadurjit Patla (EMP-00319) works as Project Manager in Procurement (DEPT-008) at the Delhi office. The employee joined on 2025-10-20. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00319"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9999999999999184,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the quotation requirement for purchases above INR 250000?",
+        "reference_answer": "At least three vendor quotations, unless an approved exception is documented.",
+        "answerable": true,
+        "generated_answer": "Purchases above INR 250000 require at least three vendor quotations unless an approved exception is documented.",
+        "retrieved_contexts": [
+            "Source: POL-PRC-001\nContent: Company: TechNova Solutions\nDepartment: Procurement\nPolicy: Procurement Policy\n\nPurchase requests require a business justification and budget-owner approval. Purchases above INR 250000 require at least three vendor quotations unless an approved exception is documented. Purchase orders must be issued before goods or services are received."
+        ],
+        "sources": [
+            "POL-PRC-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.0,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What should employees do if they suspect data exposure?",
+        "reference_answer": "Report it to the security team immediately.",
+        "answerable": true,
+        "generated_answer": "Employees should report suspected data exposure to the security team immediately.",
+        "retrieved_contexts": [
+            "Source: POL-LEGAL-001\nContent: Company: TechNova Solutions\nDepartment: Legal and Compliance\nPolicy: Data Handling Policy\n\nConfidential company information must only be shared with authorized recipients. Customer personal data must be accessed only for approved business purposes. Suspected data exposure must be reported to the security team immediately."
+        ],
+        "sources": [
+            "POL-LEGAL-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999997,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee referral bonus amount?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What is the approved budget for project Security Compliance Upgrade - 201?",
+        "reference_answer": "INR 1,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Security Compliance Upgrade - 201 is INR 1,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0201\nContent: Project: Security Compliance Upgrade - 201 (PROJ-0201). Department: Procurement (DEPT-008). Project manager employee ID: EMP-00952. Status: In Progress. Start date: 2025-02-12. Approved budget: INR 1,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0201"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9596089607767122,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What payment terms apply to vendor Sridhar, Acharya and Narula Services?",
+        "reference_answer": "60 days",
+        "answerable": true,
+        "generated_answer": "The payment terms for vendor Sridhar, Acharya and Narula Services (VEND-0005) are 60 days.\n\nSource: DOC-VEND-0005",
+        "retrieved_contexts": [
+            "Source: DOC-VEND-0005\nContent: Vendor Sridhar, Acharya and Narula Services (VEND-0005) provides Office Supplies services. Registered city: Bikaner. Contract status: Under Review. Standard payment terms: 60 days.\n\nSource: DOC-VEND-0201\nContent: Vendor Narula, Srinivasan and Shere Services (VEND-0201) provides Office Supplies services. Registered city: Secunderabad. Contract status: Active. Standard payment terms: 45 days.\n\nSource: DOC-VEND-0026\nContent: Vendor Narula and Sons Services (VEND-0026) provides Training services. Registered city: Alappuzha. Contract status: Under Review. Standard payment terms: 30 days."
+        ],
+        "sources": [
+            "DOC-VEND-0005",
+            "DOC-VEND-0201",
+            "DOC-VEND-0026"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.5922825709530923,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Customer Support Automation - 008?",
+        "reference_answer": "INR 10,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Customer Support Automation - 008 is INR 10,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0008\nContent: Project: Customer Support Automation - 008 (PROJ-0008). Department: Customer Support (DEPT-010). Project manager employee ID: EMP-00939. Status: Planning. Start date: 2026-09-17. Approved budget: INR 10,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0008"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9491540206144095,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What payment terms apply to vendor Savant, Kar and Pillai Services?",
+        "reference_answer": "15 days",
+        "answerable": true,
+        "generated_answer": "The payment terms for vendor Savant, Kar and Pillai Services (VEND-0160) are 15 days.\n\nSource: DOC-VEND-0160",
+        "retrieved_contexts": [
+            "Source: DOC-VEND-0160\nContent: Vendor Savant, Kar and Pillai Services (VEND-0160) provides Consulting services. Registered city: Jammu. Contract status: Under Review. Standard payment terms: 15 days.\n\nSource: DOC-VEND-0054\nContent: Vendor Savant, Nagi and Luthra Services (VEND-0054) provides Software services. Registered city: Mahbubnagar. Contract status: Active. Standard payment terms: 30 days."
+        ],
+        "sources": [
+            "DOC-VEND-0160",
+            "DOC-VEND-0054"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9247517746103395,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What payment terms apply to vendor Dube LLC Services?",
+        "reference_answer": "15 days",
+        "answerable": true,
+        "generated_answer": "Vendor Dube LLC Services has standard payment terms of 15 days.\n\nSource: DOC-VEND-0165",
+        "retrieved_contexts": [
+            "Source: DOC-VEND-0165\nContent: Vendor Dube LLC Services (VEND-0165) provides Hardware services. Registered city: Tadepalligudem. Contract status: Active. Standard payment terms: 15 days.\n\nSource: DOC-VEND-0072\nContent: Vendor Nayar LLC Services (VEND-0072) provides Consulting services. Registered city: Bally. Contract status: Active. Standard payment terms: 15 days."
+        ],
+        "sources": [
+            "DOC-VEND-0165",
+            "DOC-VEND-0072"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9565775160222207,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Victor Kannan?",
+        "reference_answer": "EMP-00055",
+        "answerable": true,
+        "generated_answer": "Victor Kannan's employee ID is EMP-00055. \n\nSource: DOC-EMP-00055",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00055\nContent: Employee profile: Victor Kannan (EMP-00055) works as Finance Analyst in Engineering (DEPT-004) at the Hyderabad office. The employee joined on 2021-10-08. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00055"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9842317371855939,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Raksha Varughese?",
+        "reference_answer": "EMP-00052",
+        "answerable": true,
+        "generated_answer": "The employee ID of Raksha Varughese is EMP-00052.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00052\nContent: Employee profile: Raksha Varughese (EMP-00052) works as DevOps Engineer in Information Technology (DEPT-003) at the Delhi office. The employee joined on 2023-05-13. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00052"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999313,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Libni Doshi?",
+        "reference_answer": "EMP-00286",
+        "answerable": true,
+        "generated_answer": "The employee ID of Libni Doshi is EMP-00286.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00286\nContent: Employee profile: Libni Doshi (EMP-00286) works as DevOps Engineer in Information Technology (DEPT-003) at the Delhi office. The employee joined on 2020-12-16. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00286"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999153,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000033?",
+        "reference_answer": "P4",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000033 is P4.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000033\nContent: IT ticket IT-000033 was raised by Frederick D’Alia (EMP-00805) from Customer Support (DEPT-010). Category: Email Issue. Priority: P4. Status: In Progress. Created: 2024-11-21."
+        ],
+        "sources": [
+            "DOC-IT-000033"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9406982749061576,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000088?",
+        "reference_answer": "P4",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000088 is P4.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000088\nContent: IT ticket IT-000088 was raised by Turvi Sachdev (EMP-00263) from Marketing (DEPT-009). Category: Software Installation. Priority: P4. Status: In Progress. Created: 2026-03-05."
+        ],
+        "sources": [
+            "DOC-IT-000088"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9388846614955434,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Payment Processing System - 170?",
+        "reference_answer": "INR 1,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Payment Processing System - 170 (PROJ-0170) is INR 1,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0170\nContent: Project: Payment Processing System - 170 (PROJ-0170). Department: Marketing (DEPT-009). Project manager employee ID: EMP-00310. Status: Completed. Start date: 2024-05-14. Approved budget: INR 1,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0170"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.7733300427516515,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approval status of expense EXP-000199?",
+        "reference_answer": "Rejected",
+        "answerable": true,
+        "generated_answer": "The approval status of expense EXP-000199 is Rejected. This information is directly provided in the source document DOC-EXP-000199.",
+        "retrieved_contexts": [
+            "Source: DOC-EXP-000199\nContent: Expense EXP-000199 was submitted by Theodore Devi (EMP-00031) for project Cloud Migration - 300 (PROJ-0300). Category: Accommodation. Amount: INR 31,819. Date: 2026-09-20. Approval status: Rejected."
+        ],
+        "sources": [
+            "DOC-EXP-000199"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999994,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What payment terms apply to vendor Luthra PLC Services?",
+        "reference_answer": "30 days",
+        "answerable": true,
+        "generated_answer": "Vendor Luthra PLC Services (VEND-0036) provides Software services. The standard payment terms for this vendor are 30 days.\n\nSource: DOC-VEND-0036",
+        "retrieved_contexts": [
+            "Source: DOC-VEND-0036\nContent: Vendor Luthra PLC Services (VEND-0036) provides Software services. Registered city: Saharanpur. Contract status: Expired. Standard payment terms: 30 days.\n\nSource: DOC-VEND-0054\nContent: Vendor Savant, Nagi and Luthra Services (VEND-0054) provides Software services. Registered city: Mahbubnagar. Contract status: Active. Standard payment terms: 30 days.\n\nSource: DOC-VEND-0259\nContent: Vendor Bora PLC Services (VEND-0259) provides Hardware services. Registered city: Mau. Contract status: Under Review. Standard payment terms: 45 days."
+        ],
+        "sources": [
+            "DOC-VEND-0036",
+            "DOC-VEND-0054",
+            "DOC-VEND-0259"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9044285836669023,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "How many annual leave days does an employee receive?",
+        "reference_answer": "18 annual leave days.",
+        "answerable": true,
+        "generated_answer": "Employees receive 18 annual leave days per calendar year.",
+        "retrieved_contexts": [
+            "Source: POL-HR-001\nContent: Company: TechNova Solutions\nDepartment: Human Resources\nPolicy: Leave and Time Off Policy\n\nEmployees receive 18 annual leave days, 10 sick leave days and 6 casual leave days per calendar year. Annual leave requests should be submitted at least 3 working days in advance and require manager approval. Up to 5 unused annual leave days may be carried forward. Emergency leave must be communicated to the manager as soon as possible."
+        ],
+        "sources": [
+            "POL-HR-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9341917381244951,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the guaranteed annual performance bonus percentage?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What is the exact salary band for a principal architect?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What is the approval status of expense EXP-000231?",
+        "reference_answer": "Rejected",
+        "answerable": true,
+        "generated_answer": "The approval status of expense EXP-000231 is Rejected.",
+        "retrieved_contexts": [
+            "Source: DOC-EXP-000231\nContent: Expense EXP-000231 was submitted by Varenya Kala (EMP-00616) for project Payment Processing System - 146 (PROJ-0146). Category: Accommodation. Amount: INR 49,459. Date: 2024-03-11. Approval status: Rejected."
+        ],
+        "sources": [
+            "DOC-EXP-000231"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999996,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "How many days per week can an eligible employee work remotely?",
+        "reference_answer": "Up to 2 days per week, with manager approval.",
+        "answerable": true,
+        "generated_answer": "An eligible employee can work remotely up to 2 days per week with manager approval.",
+        "retrieved_contexts": [
+            "Source: POL-HR-002\nContent: Company: TechNova Solutions\nDepartment: Human Resources\nPolicy: Remote Work Policy\n\nEmployees become eligible for remote work after completing 3 months of employment. Eligible employees may work remotely up to 2 days per week with manager approval. Employees must use company-approved devices and connect through the company VPN. Core collaboration hours are 10:00 AM to 4:00 PM."
+        ],
+        "sources": [
+            "POL-HR-002"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.8774950065013588,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Tanish Bhatt?",
+        "reference_answer": "EMP-00162",
+        "answerable": true,
+        "generated_answer": "The employee ID of Tanish Bhatt is EMP-00162.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00162\nContent: Employee profile: Tanish Bhatt (EMP-00162) works as Data Engineer in Procurement (DEPT-008) at the Pune office. The employee joined on 2026-03-07. Employment type: Full-time. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00162"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999344,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approval status of expense EXP-000041?",
+        "reference_answer": "Pending",
+        "answerable": true,
+        "generated_answer": "The approval status of expense EXP-000041 is Pending. This information is directly provided in the source document DOC-EXP-000041.",
+        "retrieved_contexts": [
+            "Source: DOC-EXP-000041\nContent: Expense EXP-000041 was submitted by Charles Dugal (EMP-00394) for project AI Knowledge Assistant - 238 (PROJ-0238). Category: Software Subscription. Amount: INR 41,146. Date: 2024-07-26. Approval status: Pending."
+        ],
+        "sources": [
+            "DOC-EXP-000041"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999992,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Ikbal Kothari?",
+        "reference_answer": "EMP-00066",
+        "answerable": true,
+        "generated_answer": "The employee ID of Ikbal Kothari is EMP-00796.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00796\nContent: Employee profile: Ikbal Kothari (EMP-00796) works as QA Engineer in Information Technology (DEPT-003) at the Mumbai office. The employee joined on 2021-10-21. Employment type: Full-time. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00796"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999089,
+            "context_precision": 0.9999999999,
+            "context_recall": 0.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Security Compliance Upgrade - 142?",
+        "reference_answer": "INR 1,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Security Compliance Upgrade - 142 (PROJ-0142) is INR 1,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0142\nContent: Project: Security Compliance Upgrade - 142 (PROJ-0142). Department: Procurement (DEPT-008). Project manager employee ID: EMP-00808. Status: Completed. Start date: 2026-05-08. Approved budget: INR 1,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0142"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9675905373164143,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "How quickly must a P1 incident be acknowledged?",
+        "reference_answer": "Within 15 minutes.",
+        "answerable": true,
+        "generated_answer": "A P1 incident must be acknowledged within 15 minutes.",
+        "retrieved_contexts": [
+            "Source: POL-OPS-001\nContent: Company: TechNova Solutions\nDepartment: Operations\nPolicy: Incident Management Policy\n\nP1 incidents must be acknowledged within 15 minutes and escalated immediately to the on-call lead. P2 incidents must be acknowledged within 1 hour. Incident records must include impact, timeline, owner, mitigation and resolution details."
+        ],
+        "sources": [
+            "POL-OPS-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.975877308331406,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approval status of expense EXP-000250?",
+        "reference_answer": "Pending",
+        "answerable": true,
+        "generated_answer": "The approval status of expense EXP-000250 is Pending. This information is derived from the details provided in DOC-EXP-000250.",
+        "retrieved_contexts": [
+            "Source: DOC-EXP-000250\nContent: Expense EXP-000250 was submitted by Rachit Sankar (EMP-00764) for project Security Compliance Upgrade - 193 (PROJ-0193). Category: Office Supplies. Amount: INR 44,457. Date: 2024-07-02. Approval status: Pending."
+        ],
+        "sources": [
+            "DOC-EXP-000250"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9999999999999994,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "Within how many days must an expense claim be submitted after a business trip?",
+        "reference_answer": "Within 15 calendar days.",
+        "answerable": true,
+        "generated_answer": "An expense claim must be submitted within 15 calendar days after the trip. Source: POL-FIN-001",
+        "retrieved_contexts": [
+            "Source: POL-FIN-001\nContent: Company: TechNova Solutions\nDepartment: Finance\nPolicy: Business Expense Policy\n\nBusiness travel requires manager approval before booking. Expense claims must be submitted within 15 calendar days after the trip. Original receipts are required for claims above INR 500. Personal expenses are not reimbursable."
+        ],
+        "sources": [
+            "POL-FIN-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.8380788448894476,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Karan Mital?",
+        "reference_answer": "EMP-00089",
+        "answerable": true,
+        "generated_answer": "Karan Mital's employee ID is EMP-00089.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00089\nContent: Employee profile: Karan Mital (EMP-00089) works as Project Manager in Finance (DEPT-002) at the Bengaluru office. The employee joined on 2025-03-18. Employment type: Contract. Current status: On Leave."
+        ],
+        "sources": [
+            "DOC-EMP-00089"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9825532512350388,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000110?",
+        "reference_answer": "P2",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000110 is P2.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000110\nContent: IT ticket IT-000110 was raised by Chakradev Kannan (EMP-00401) from Finance (DEPT-002). Category: Network Issue. Priority: P2. Status: Open. Created: 2024-05-22."
+        ],
+        "sources": [
+            "DOC-IT-000110"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9446343001087704,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Charles Dugal?",
+        "reference_answer": "EMP-00394",
+        "answerable": true,
+        "generated_answer": "The employee ID of Charles Dugal is EMP-00394.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00394\nContent: Employee profile: Charles Dugal (EMP-00394) works as DevOps Engineer in Information Technology (DEPT-003) at the Delhi office. The employee joined on 2024-09-17. Employment type: Contract. Current status: Inactive."
+        ],
+        "sources": [
+            "DOC-EMP-00394"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999991,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is required before a production deployment?",
+        "reference_answer": "An approved change record, peer review and a rollback plan.",
+        "answerable": true,
+        "generated_answer": "Before a production deployment, the following requirements are necessary according to the Software Deployment Policy:\n\n- An approved change record\n- Peer review\n- A rollback plan\n\nHigh-risk changes must be scheduled during an approved maintenance window. Deployment outcomes must be recorded in the release log.",
+        "retrieved_contexts": [
+            "Source: POL-ENG-001\nContent: Company: TechNova Solutions\nDepartment: Engineering\nPolicy: Software Deployment Policy\n\nProduction deployments require an approved change record, peer review and a rollback plan. High-risk changes must be scheduled during an approved maintenance window. Deployment outcomes must be recorded in the release log."
+        ],
+        "sources": [
+            "POL-ENG-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.8,
+            "answer_relevancy": 0.811084572774666,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "Does the company provide a company car to all managers?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What is the employee ID of Faqid Kibe?",
+        "reference_answer": "EMP-00190",
+        "answerable": true,
+        "generated_answer": "The employee ID of Faqid Kibe is EMP-00190.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00190\nContent: Employee profile: Faqid Kibe (EMP-00190) works as Finance Analyst in Marketing (DEPT-009) at the Mumbai office. The employee joined on 2025-08-17. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00190"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.999999999999888,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000131?",
+        "reference_answer": "P1",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000131 is P1. \n\nSource: DOC-IT-000131",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000131\nContent: IT ticket IT-000131 was raised by Isaac Patil (EMP-00044) from Sales (DEPT-007). Category: Software Installation. Priority: P1. Status: In Progress. Created: 2024-03-04."
+        ],
+        "sources": [
+            "DOC-IT-000131"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9427102281790617,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "Does the company provide a relocation allowance for every employee?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What is the approved budget for project ERP Modernization - 290?",
+        "reference_answer": "INR 5,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project ERP Modernization - 290 is INR 5,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0290\nContent: Project: ERP Modernization - 290 (PROJ-0290). Department: Legal and Compliance (DEPT-006). Project manager employee ID: EMP-00900. Status: Completed. Start date: 2026-05-17. Approved budget: INR 5,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0290"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9218848272232467,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000067?",
+        "reference_answer": "P1",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000067 is P1.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000067\nContent: IT ticket IT-000067 was raised by Waida D’Alia (EMP-00336) from Procurement (DEPT-008). Category: Access Request. Priority: P1. Status: Closed. Created: 2024-02-10."
+        ],
+        "sources": [
+            "DOC-IT-000067"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9370524169857033,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Oviya Krishnan?",
+        "reference_answer": "EMP-00179",
+        "answerable": true,
+        "generated_answer": "The employee ID of Oviya Krishnan is EMP-00179.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00179\nContent: Employee profile: Oviya Krishnan (EMP-00179) works as Project Manager in Engineering (DEPT-004) at the Mumbai office. The employee joined on 2021-08-09. Employment type: Full-time. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00179"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999177,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the company's annual stock option vesting schedule?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What is the approval status of expense EXP-000217?",
+        "reference_answer": "Approved",
+        "answerable": true,
+        "generated_answer": "The approval status of expense EXP-000217 is Approved.\n\nSource: DOC-EXP-000217",
+        "retrieved_contexts": [
+            "Source: DOC-EXP-000217\nContent: Expense EXP-000217 was submitted by Qasim Handa (EMP-00217) for project Cloud Migration - 088 (PROJ-0088). Category: Office Supplies. Amount: INR 46,369. Date: 2024-07-02. Approval status: Approved."
+        ],
+        "sources": [
+            "DOC-EXP-000217"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9999999999999997,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the company's official work-from-home internet reimbursement amount?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What is the approved budget for project Payment Processing System - 164?",
+        "reference_answer": "INR 2,500,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Payment Processing System - 164 (PROJ-0164) is INR 2,500,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0164\nContent: Project: Payment Processing System - 164 (PROJ-0164). Department: Sales (DEPT-007). Project manager employee ID: EMP-00491. Status: Planning. Start date: 2026-01-18. Approved budget: INR 2,500,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0164"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.7771349454214583,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Customer Support Automation - 058?",
+        "reference_answer": "INR 10,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Customer Support Automation - 058 (PROJ-0058) is INR 10,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0058\nContent: Project: Customer Support Automation - 058 (PROJ-0058). Department: Information Technology (DEPT-003). Project manager employee ID: EMP-00631. Status: Completed. Start date: 2026-03-09. Approved budget: INR 10,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0058"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9813376166202253,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "How many weeks of maternity leave are provided to eligible employees?",
+        "reference_answer": "26 weeks.",
+        "answerable": true,
+        "generated_answer": "Eligible employees receive 26 weeks of maternity leave.",
+        "retrieved_contexts": [
+            "Source: POL-HR-003\nContent: Company: TechNova Solutions\nDepartment: Human Resources\nPolicy: Parental Leave Policy\n\nEligible employees receive 26 weeks of maternity leave. Eligible fathers receive 15 working days of paternity leave. Employees must notify HR and provide required documentation. Leave scheduling should be coordinated with HR."
+        ],
+        "sources": [
+            "POL-HR-003"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9832398473377241,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Mekhala Pau?",
+        "reference_answer": "EMP-00327",
+        "answerable": true,
+        "generated_answer": "The employee ID of Mekhala Pau is EMP-00327.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00327\nContent: Employee profile: Mekhala Pau (EMP-00327) works as HR Executive in Customer Support (DEPT-010) at the Delhi office. The employee joined on 2022-05-13. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00327"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999998845,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "Can I work from home twice a week?",
+        "reference_answer": "Eligible employees may work remotely up to 2 days per week with manager approval.",
+        "answerable": true,
+        "generated_answer": "Yes, you can work from home twice a week with manager approval, according to the Remote Work Policy of TechNova Solutions.",
+        "retrieved_contexts": [
+            "Source: POL-HR-002\nContent: Company: TechNova Solutions\nDepartment: Human Resources\nPolicy: Remote Work Policy\n\nEmployees become eligible for remote work after completing 3 months of employment. Eligible employees may work remotely up to 2 days per week with manager approval. Employees must use company-approved devices and connect through the company VPN. Core collaboration hours are 10:00 AM to 4:00 PM."
+        ],
+        "sources": [
+            "POL-HR-002"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.6879379537392839,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Girindra Chatterjee?",
+        "reference_answer": "EMP-00062",
+        "answerable": true,
+        "generated_answer": "Girindra Chatterjee's employee ID is EMP-00062.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00062\nContent: Employee profile: Girindra Chatterjee (EMP-00062) works as Technical Lead in Marketing (DEPT-009) at the Pune office. The employee joined on 2026-04-16. Employment type: Full-time. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00062"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9852780496162586,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000267?",
+        "reference_answer": "P4",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000267 is P4.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000267\nContent: IT ticket IT-000267 was raised by Xalak Nazareth (EMP-00717) from Sales (DEPT-007). Category: Software Installation. Priority: P4. Status: Open. Created: 2025-04-25."
+        ],
+        "sources": [
+            "DOC-IT-000267"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9409767475439271,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000237?",
+        "reference_answer": "P1",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000237 is P1.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000237\nContent: IT ticket IT-000237 was raised by Amol Parikh (EMP-00492) from Procurement (DEPT-008). Category: Security Incident. Priority: P1. Status: In Progress. Created: 2025-02-06."
+        ],
+        "sources": [
+            "DOC-IT-000237"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.938850030993663,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What payment terms apply to vendor Ghose-Ganesh Services?",
+        "reference_answer": "45 days",
+        "answerable": true,
+        "generated_answer": "Vendor Ghose-Ganesh Services (VEND-0041) provides Office Supplies services. The standard payment terms for this vendor are 45 days.\n\nSource: DOC-VEND-0041",
+        "retrieved_contexts": [
+            "Source: DOC-VEND-0041\nContent: Vendor Ghose-Ganesh Services (VEND-0041) provides Office Supplies services. Registered city: Nellore. Contract status: Active. Standard payment terms: 45 days.\n\nSource: DOC-VEND-0067\nContent: Vendor Ghose PLC Services (VEND-0067) provides Cloud Services services. Registered city: Rajahmundry. Contract status: Active. Standard payment terms: 30 days.\n\nSource: DOC-VEND-0176\nContent: Vendor Butala, Char and Ganesh Services (VEND-0176) provides Cloud Services services. Registered city: Amritsar. Contract status: Active. Standard payment terms: 15 days."
+        ],
+        "sources": [
+            "DOC-VEND-0041",
+            "DOC-VEND-0067",
+            "DOC-VEND-0176"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.6666666666666666,
+            "answer_relevancy": 0.8431340865788846,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the P1 incident response acknowledgement target?",
+        "reference_answer": "Within 15 minutes.",
+        "answerable": true,
+        "generated_answer": "P1 incidents must be acknowledged within 15 minutes.",
+        "retrieved_contexts": [
+            "Source: POL-OPS-001\nContent: Company: TechNova Solutions\nDepartment: Operations\nPolicy: Incident Management Policy\n\nP1 incidents must be acknowledged within 15 minutes and escalated immediately to the on-call lead. P2 incidents must be acknowledged within 1 hour. Incident records must include impact, timeline, owner, mitigation and resolution details."
+        ],
+        "sources": [
+            "POL-OPS-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.7151163452488101,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Data Warehouse Modernization - 041?",
+        "reference_answer": "INR 10,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Data Warehouse Modernization - 041 is INR 10,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0041\nContent: Project: Data Warehouse Modernization - 041 (PROJ-0041). Department: Finance (DEPT-002). Project manager employee ID: EMP-00536. Status: In Progress. Start date: 2026-07-02. Approved budget: INR 10,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0041"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9439186050424868,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "Is multi-factor authentication required for company accounts?",
+        "reference_answer": "Yes, multi-factor authentication is required.",
+        "answerable": true,
+        "generated_answer": "Source: POL-IT-001\n\nYes, multi-factor authentication is required for company accounts.",
+        "retrieved_contexts": [
+            "Source: POL-IT-001\nContent: Company: TechNova Solutions\nDepartment: Information Technology\nPolicy: IT Security Policy\n\nMulti-factor authentication is required for company accounts. Passwords must never be shared. Company data must not be stored on personal cloud drives. Remote access to internal systems requires the company VPN. Lost or stolen company devices must be reported to IT immediately."
+        ],
+        "sources": [
+            "POL-IT-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999997,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Security Compliance Upgrade - 048?",
+        "reference_answer": "INR 5,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Security Compliance Upgrade - 048 is INR 5,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0048\nContent: Project: Security Compliance Upgrade - 048 (PROJ-0048). Department: Operations (DEPT-005). Project manager employee ID: EMP-00411. Status: In Progress. Start date: 2024-07-29. Approved budget: INR 5,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0048"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9425680168081737,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What do I need before releasing software to production?",
+        "reference_answer": "An approved change record, peer review and a rollback plan.",
+        "answerable": true,
+        "generated_answer": "Before releasing software to production, you need an approved change record, peer review, and a rollback plan. High-risk changes must be scheduled during an approved maintenance window. Deployment outcomes should be recorded in the release log. These requirements are outlined in TechNova Solutions' Software Deployment Policy, as described in POL-ENG-001.",
+        "retrieved_contexts": [
+            "Source: POL-ENG-001\nContent: Company: TechNova Solutions\nDepartment: Engineering\nPolicy: Software Deployment Policy\n\nProduction deployments require an approved change record, peer review and a rollback plan. High-risk changes must be scheduled during an approved maintenance window. Deployment outcomes must be recorded in the release log."
+        ],
+        "sources": [
+            "POL-ENG-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.0,
+            "answer_relevancy": 0.8774871288625711,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Payment Processing System - 297?",
+        "reference_answer": "INR 5,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Payment Processing System - 297 is INR 5,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0297\nContent: Project: Payment Processing System - 297 (PROJ-0297). Department: Finance (DEPT-002). Project manager employee ID: EMP-00592. Status: On Hold. Start date: 2025-11-12. Approved budget: INR 5,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0297"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9061808918640454,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000295?",
+        "reference_answer": "P2",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000295 is P2. \n\nSource: DOC-IT-000295",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000295\nContent: IT ticket IT-000295 was raised by Ayush Gole (EMP-00386) from Customer Support (DEPT-010). Category: Email Issue. Priority: P2. Status: Resolved. Created: 2024-12-04."
+        ],
+        "sources": [
+            "DOC-IT-000295"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9392192516274278,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Kritika Brar?",
+        "reference_answer": "EMP-00014",
+        "answerable": true,
+        "generated_answer": "The employee ID of Kritika Brar is EMP-00014.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00014\nContent: Employee profile: Kritika Brar (EMP-00014) works as Data Engineer in Marketing (DEPT-009) at the Delhi office. The employee joined on 2023-08-21. Employment type: Full-time. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00014"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.999999999999918,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Customer Analytics Platform - 077?",
+        "reference_answer": "INR 10,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Customer Analytics Platform - 077 (PROJ-0077) is INR 10,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0077\nContent: Project: Customer Analytics Platform - 077 (PROJ-0077). Department: Marketing (DEPT-009). Project manager employee ID: EMP-00910. Status: On Hold. Start date: 2026-07-18. Approved budget: INR 10,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0077"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9871533738215041,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000230?",
+        "reference_answer": "P4",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000230 is P4.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000230\nContent: IT ticket IT-000230 was raised by Farhan Sengupta (EMP-00698) from Legal and Compliance (DEPT-006). Category: Network Issue. Priority: P4. Status: Closed. Created: 2024-07-24."
+        ],
+        "sources": [
+            "DOC-IT-000230"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9426651249154546,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approval status of expense EXP-000135?",
+        "reference_answer": "Approved",
+        "answerable": true,
+        "generated_answer": "The approval status of expense EXP-000135 is Approved.\n\nSource: DOC-EXP-000135",
+        "retrieved_contexts": [
+            "Source: DOC-EXP-000135\nContent: Expense EXP-000135 was submitted by Barkha Rai (EMP-00707) for project Digital Banking Platform - 158 (PROJ-0158). Category: Software Subscription. Amount: INR 3,935. Date: 2024-01-10. Approval status: Approved."
+        ],
+        "sources": [
+            "DOC-EXP-000135"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9999999999999994,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approval status of expense EXP-000283?",
+        "reference_answer": "Pending",
+        "answerable": true,
+        "generated_answer": "The approval status of expense EXP-000283 is Pending. This information is derived from the source document DOC-EXP-000283.",
+        "retrieved_contexts": [
+            "Source: DOC-EXP-000283\nContent: Expense EXP-000283 was submitted by Dalbir Sachar (EMP-00695) for project Customer Support Automation - 273 (PROJ-0273). Category: Training. Amount: INR 39,468. Date: 2026-04-04. Approval status: Pending."
+        ],
+        "sources": [
+            "DOC-EXP-000283"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999999,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Ijaya Rege?",
+        "reference_answer": "EMP-00256",
+        "answerable": true,
+        "generated_answer": "Ijaya Rege's employee ID is EMP-00256. \n\nSource: DOC-EMP-00256",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00256\nContent: Employee profile: Ijaya Rege (EMP-00256) works as Technical Lead in Legal and Compliance (DEPT-006) at the Chennai office. The employee joined on 2025-08-28. Employment type: Full-time. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00256"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.9698698286818397,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "Who must approve an access request?",
+        "reference_answer": "The employee's manager and the system owner.",
+        "answerable": true,
+        "generated_answer": "Access requests must be approved by the employee's manager and system owner. This information is derived from the Access Management Policy in the source document POL-IT-002.",
+        "retrieved_contexts": [
+            "Source: POL-IT-002\nContent: Company: TechNova Solutions\nDepartment: Information Technology\nPolicy: Access Management Policy\n\nAccess requests must be submitted through the service desk and approved by the employee's manager and system owner. Access is granted using least-privilege principles. Access must be reviewed when an employee changes role or leaves the company."
+        ],
+        "sources": [
+            "POL-IT-002"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.0,
+            "answer_relevancy": 0.7595253961307793,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "How much annual time off is available?",
+        "reference_answer": "18 annual leave days.",
+        "answerable": true,
+        "generated_answer": "Employees receive 18 annual leave days per calendar year.",
+        "retrieved_contexts": [
+            "Source: POL-HR-001\nContent: Company: TechNova Solutions\nDepartment: Human Resources\nPolicy: Leave and Time Off Policy\n\nEmployees receive 18 annual leave days, 10 sick leave days and 6 casual leave days per calendar year. Annual leave requests should be submitted at least 3 working days in advance and require manager approval. Up to 5 unused annual leave days may be carried forward. Emergency leave must be communicated to the manager as soon as possible."
+        ],
+        "sources": [
+            "POL-HR-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.595020374118442,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "Does the company offer interest-free personal loans?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What is the approved budget for project Security Compliance Upgrade - 052?",
+        "reference_answer": "INR 10,000,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Security Compliance Upgrade - 052 is INR 10,000,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0052\nContent: Project: Security Compliance Upgrade - 052 (PROJ-0052). Department: Legal and Compliance (DEPT-006). Project manager employee ID: EMP-00306. Status: On Hold. Start date: 2026-06-10. Approved budget: INR 10,000,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0052"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9464787412911456,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000186?",
+        "reference_answer": "P1",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000186 is P1.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000186\nContent: IT ticket IT-000186 was raised by Hemal Chad (EMP-00437) from Finance (DEPT-002). Category: Software Installation. Priority: P1. Status: Resolved. Created: 2026-03-31."
+        ],
+        "sources": [
+            "DOC-IT-000186"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9384978926495955,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "How many free meals does the company provide each week?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What payment terms apply to vendor Ravel-Rama Services?",
+        "reference_answer": "60 days",
+        "answerable": true,
+        "generated_answer": "Vendor Ravel-Rama Services has standard payment terms of 60 days.\n\nSource: DOC-VEND-0076",
+        "retrieved_contexts": [
+            "Source: DOC-VEND-0076\nContent: Vendor Ravel-Rama Services (VEND-0076) provides Consulting services. Registered city: Ballia. Contract status: Active. Standard payment terms: 60 days.\n\nSource: DOC-VEND-0294\nContent: Vendor Ravel-Bora Services (VEND-0294) provides Software services. Registered city: Nanded. Contract status: Expired. Standard payment terms: 15 days.\n\nSource: DOC-VEND-0182\nContent: Vendor Ravel-Sant Services (VEND-0182) provides Office Supplies services. Registered city: Pune. Contract status: Expired. Standard payment terms: 15 days."
+        ],
+        "sources": [
+            "DOC-VEND-0076",
+            "DOC-VEND-0294",
+            "DOC-VEND-0182"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9632393333046023,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What payment terms apply to vendor Dave-Kuruvilla Services?",
+        "reference_answer": "15 days",
+        "answerable": true,
+        "generated_answer": "The payment terms for vendor Dave-Kuruvilla Services (VEND-0079) are 15 days.\n\nSource: DOC-VEND-0079",
+        "retrieved_contexts": [
+            "Source: DOC-VEND-0079\nContent: Vendor Dave-Kuruvilla Services (VEND-0079) provides Consulting services. Registered city: Thanjavur. Contract status: Active. Standard payment terms: 15 days.\n\nSource: DOC-VEND-0196\nContent: Vendor Dave-Keer Services (VEND-0196) provides Software services. Registered city: Anantapuram. Contract status: Under Review. Standard payment terms: 15 days.\n\nSource: DOC-VEND-0145\nContent: Vendor Dave Inc Services (VEND-0145) provides Hardware services. Registered city: Ghaziabad. Contract status: Under Review. Standard payment terms: 15 days."
+        ],
+        "sources": [
+            "DOC-VEND-0079",
+            "DOC-VEND-0196",
+            "DOC-VEND-0145"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.6949590373657628,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approved budget for project Data Warehouse Modernization - 102?",
+        "reference_answer": "INR 500,000",
+        "answerable": true,
+        "generated_answer": "The approved budget for project Data Warehouse Modernization - 102 is INR 500,000.",
+        "retrieved_contexts": [
+            "Source: DOC-PROJ-0102\nContent: Project: Data Warehouse Modernization - 102 (PROJ-0102). Department: Operations (DEPT-005). Project manager employee ID: EMP-00093. Status: On Hold. Start date: 2025-11-12. Approved budget: INR 500,000."
+        ],
+        "sources": [
+            "DOC-PROJ-0102"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9436367437390875,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the priority of IT ticket IT-000007?",
+        "reference_answer": "P4",
+        "answerable": true,
+        "generated_answer": "The priority of IT ticket IT-000007 is P4.",
+        "retrieved_contexts": [
+            "Source: DOC-IT-000007\nContent: IT ticket IT-000007 was raised by Zashil Butala (EMP-00876) from Sales (DEPT-007). Category: Access Request. Priority: P4. Status: Resolved. Created: 2024-11-05."
+        ],
+        "sources": [
+            "DOC-IT-000007"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9415401068087171,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Girik Menon?",
+        "reference_answer": "EMP-00210",
+        "answerable": true,
+        "generated_answer": "The employee ID of Girik Menon is EMP-00210.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00210\nContent: Employee profile: Girik Menon (EMP-00210) works as Senior Software Engineer in Marketing (DEPT-009) at the Delhi office. The employee joined on 2020-09-17. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00210"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999996,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the employee ID of Amrita Naidu?",
+        "reference_answer": "EMP-00199",
+        "answerable": true,
+        "generated_answer": "The employee ID of Amrita Naidu is EMP-00199.",
+        "retrieved_contexts": [
+            "Source: DOC-EMP-00199\nContent: Employee profile: Amrita Naidu (EMP-00199) works as DevOps Engineer in Legal and Compliance (DEPT-006) at the Delhi office. The employee joined on 2026-01-21. Employment type: Contract. Current status: Active."
+        ],
+        "sources": [
+            "DOC-EMP-00199"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.9999999999999357,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "What is the approval status of expense EXP-000020?",
+        "reference_answer": "Approved",
+        "answerable": true,
+        "generated_answer": "Approval status: Approved.\n\nSource: DOC-EXP-000020",
+        "retrieved_contexts": [
+            "Source: DOC-EXP-000020\nContent: Expense EXP-000020 was submitted by Nisha Savant (EMP-00891) for project ERP Modernization - 143 (PROJ-0143). Category: Training. Amount: INR 33,289. Date: 2026-10-08. Approval status: Approved."
+        ],
+        "sources": [
+            "DOC-EXP-000020"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.5,
+            "answer_relevancy": 0.0,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "When should I file my travel expenses?",
+        "reference_answer": "Within 15 calendar days after the trip.",
+        "answerable": true,
+        "generated_answer": "You should file your travel expenses within 15 calendar days after the trip.",
+        "retrieved_contexts": [
+            "Source: POL-FIN-001\nContent: Company: TechNova Solutions\nDepartment: Finance\nPolicy: Business Expense Policy\n\nBusiness travel requires manager approval before booking. Expense claims must be submitted within 15 calendar days after the trip. Original receipts are required for claims above INR 500. Personal expenses are not reimbursable."
+        ],
+        "sources": [
+            "POL-FIN-001"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 1.0,
+            "answer_relevancy": 0.733929146769234,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    },
+    {
+        "question": "Which airline is the exclusive travel partner?",
+        "reference_answer": null,
+        "answerable": false,
+        "generated_answer": "I could not find sufficient information in the available knowledge base to answer this question.",
+        "retrieved_contexts": [],
+        "sources": [],
+        "rag_status": "abstained",
+        "scores": {
+            "faithfulness": null,
+            "answer_relevancy": 0.0,
+            "context_precision": null,
+            "context_recall": null
+        }
+    },
+    {
+        "question": "What payment terms apply to vendor Mitra, Swaminathan and Parmar Services?",
+        "reference_answer": "45 days",
+        "answerable": true,
+        "generated_answer": "Vendor Mitra, Swaminathan and Parmar Services (VEND-0166) provides Software services. The standard payment terms are 45 days. Source: DOC-VEND-0166.",
+        "retrieved_contexts": [
+            "Source: DOC-VEND-0166\nContent: Vendor Mitra, Swaminathan and Parmar Services (VEND-0166) provides Software services. Registered city: Ratlam. Contract status: Expired. Standard payment terms: 45 days."
+        ],
+        "sources": [
+            "DOC-VEND-0166"
+        ],
+        "rag_status": "answered",
+        "scores": {
+            "faithfulness": 0.6666666666666666,
+            "answer_relevancy": 0.7324469194023431,
+            "context_precision": 0.9999999999,
+            "context_recall": 1.0
+        }
+    }
+]

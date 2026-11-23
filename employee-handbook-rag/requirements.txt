@@ -1,0 +1,8 @@
+chromadb
+sentence-transformers
+ollama
+pypdf
+python-docx
+rank-bm25
+hybrid_search
+ragas
